@@ -1,6 +1,8 @@
 {
   "name": "uniapp-simple-demo",
+  "type": "module",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev:custom": "uni -p",
     "dev:h5": "uni",
@@ -33,7 +35,11 @@
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-    "build:app-plus": "uni build -p app-plus"
+    "build:app-plus": "uni build -p app-plus",
+    "lint": "run-s lint:eslint lint:prettier lint:stylelint",
+    "lint:eslint": "eslint . --cache --fix",
+    "lint:prettier": "prettier . --cache --write",
+    "lint:stylelint": "stylelint 'src/**/*.{vue,css,scss}' --cache --fix"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-4050620250312001",
@@ -60,7 +66,14 @@
     "@dcloudio/uni-cli-shared": "3.0.0-4050620250312001",
     "@dcloudio/uni-stacktracey": "3.0.0-4050620250312001",
     "@dcloudio/vite-plugin-uni": "3.0.0-4050620250312001",
+    "@tofrankie/eslint": "^0.0.12",
+    "@tofrankie/prettier": "^0.0.5",
+    "@tofrankie/stylelint": "^0.0.6",
     "@vue/runtime-core": "^3.5.13",
+    "eslint": "^10.0.3",
+    "npm-run-all2": "^8.0.4",
+    "stylelint": "^17.4.0",
+    "typescript": "^5.9.3",
     "vite": "5.2.8"
   }
 }

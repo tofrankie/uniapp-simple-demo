@@ -13,7 +13,7 @@ onMounted(async () => {
 })
 
 function fetchList() {
-  return new Promise(resolve => setTimeout(() => resolve(FAKE_LIST), 1000))
+  return new Promise(resolve => setTimeout(resolve, 1000, FAKE_LIST))
 }
 
 function onChange(e) {
@@ -46,20 +46,20 @@ function onChange(e) {
 }
 
 .swiper {
+  width: 100%;
+  height: 72rpx;
   margin-bottom: 30rpx;
   background: #eee;
   border-radius: 10rpx;
-  width: 100%;
-  height: 72rpx;
 }
 
 .swiper-item {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  display: flex;
-  align-items: center;
 }
 </style>

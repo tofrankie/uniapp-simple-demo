@@ -1,5 +1,5 @@
 <script setup>
-import { onLaunch, onShow, onHide } from '@dcloudio/uni-app'
+import { onHide, onLaunch, onShow } from '@dcloudio/uni-app'
 
 onLaunch(() => {
   console.log('App Launch')
@@ -15,5 +15,5 @@ onHide(() => {
 </script>
 
 <style>
-/*每个页面公共css */
+/* 每个页面公共css */
 </style>

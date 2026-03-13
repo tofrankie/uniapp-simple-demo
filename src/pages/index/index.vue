@@ -36,9 +36,9 @@ function navToSwiperDemo() {
 .box {
   width: 600rpx;
   height: 600rpx;
-  background-color: red;
   margin: 100rpx auto 0;
   color: #fff;
+  background-color: red;
 }
 
 .parent-box {
@@ -46,9 +46,9 @@ function navToSwiperDemo() {
 }
 
 .icon {
+  display: block;
   width: 56rpx;
   height: 56rpx;
   margin-right: 4rpx;
-  display: block;
 }
 </style>

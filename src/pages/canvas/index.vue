@@ -34,7 +34,7 @@ async function queryElement(selector, componentInstance) {
 </script>
 
 <template>
-  <canvas id="canvas" canvas-id="canvas" class="canvas" type="2d"></canvas>
+  <canvas id="canvas" canvas-id="canvas" class="canvas" type="2d" />
 </template>
 
 <style scoped>
