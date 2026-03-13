@@ -1,8 +1,14 @@
 <script setup>
 import { onHide, onLaunch, onShow } from '@dcloudio/uni-app'
+import ga from '@tofrankie/miniprogram-ga4'
 
 onLaunch(() => {
   console.log('App Launch')
+
+  ga.config('xxx', 'xxx', {
+    debug: true,
+    api: uni,
+  })
 })
 
 onShow(() => {

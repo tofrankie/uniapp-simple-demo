@@ -4,19 +4,19 @@ import ga from '@tofrankie/miniprogram-ga4'
 import { ROUTE } from '@/constants'
 
 onLoad(() => {
-  ga.pageView('首页', ROUTE.INDEX)
+  ga.pageView('我的', ROUTE.MINE)
 })
 
-function navToMine() {
-  ga.event('首页', '点击-前往我的页面')
-  uni.navigateTo({ url: ROUTE.MINE })
+function navToIndex() {
+  ga.event('我的', '点击-前往首页')
+  uni.navigateTo({ url: ROUTE.INDEX })
 }
 </script>
 
 <template>
-  <view>首页</view>
+  <view>我的</view>
 
-  <button class="btn" @click="navToMine">前往我的页面</button>
+  <button class="btn" @click="navToIndex">前往首页</button>
 </template>
 
 <style scoped>

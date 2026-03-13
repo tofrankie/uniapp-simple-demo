@@ -56,6 +56,9 @@ importers:
       '@dcloudio/uni-quickapp-webview':
         specifier: 3.0.0-alpha-5000320260310001
         version: 3.0.0-alpha-5000320260310001(postcss@8.5.8)(rollup@4.36.0)(vue@3.4.21(typescript@5.9.3))
+      '@tofrankie/miniprogram-ga4':
+        specifier: ^0.0.3
+        version: 0.0.3
       vue:
         specifier: 3.4.21
         version: 3.4.21(typescript@5.9.3)
@@ -1826,6 +1829,9 @@ packages:
     peerDependencies:
       '@antfu/eslint-config': ^7.6.1
       eslint: ^9.10.0 || ^10.0.0
+
+  '@tofrankie/miniprogram-ga4@0.0.3':
+    resolution: {integrity: sha512-gdeI7QBTsKSW44U98KcWmkJrZIB9MzLXxAhNBWXqOyJZ2JWxkfbCDjFHPp3msmr6gmMB+6eDSpuLMeWo7jFaBA==}
 
   '@tofrankie/prettier@0.0.5':
     resolution: {integrity: sha512-d3RGC2y4Tr6k7KE/eSFXz7ZDnnSvEhRb0lk+tsYb2o6jU0FXsZwov10O0KFAi/4MlTOTNEmrI5IN+Et7ILc+Jg==}
@@ -7859,6 +7865,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  '@tofrankie/miniprogram-ga4@0.0.3': {}
 
   '@tofrankie/prettier@0.0.5(prettier@3.8.1)':
     dependencies:
