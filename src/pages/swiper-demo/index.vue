@@ -19,15 +19,7 @@ const imageList = [
 </script>
 
 <template>
-  <swiper
-    autoplay
-    circular
-    class="swiper"
-    :duration="500"
-    :interval="2000"
-    vertical
-    @change="onChange"
-  >
+  <swiper class="swiper" :duration="500" :interval="2000" autoplay circular vertical @change="onChange">
     <swiper-item v-for="image in imageList" :key="image" class="swiper-item">
       <image class="image" :src="image" />
     </swiper-item>

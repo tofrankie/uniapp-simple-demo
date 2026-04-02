@@ -13,10 +13,10 @@ function navToSwiperDemo() {
 
   <view class="parent-box">
     <ColorfulIcon
-      v-bind="$attrs"
       class="icon"
       color="#f00"
       src="https://cloud-minapp-44328.cloud.ifanrusercontent.com/icon-pro-mode-super.svg"
+      v-bind="$attrs"
     />
   </view>
 </template>

@@ -24,15 +24,7 @@ function onChange(e) {
 <template>
   <view class="subtitle">组件一</view>
 
-  <swiper
-    autoplay
-    circular
-    class="swiper"
-    :duration="200"
-    :interval="2000"
-    vertical
-    @change="onChange"
-  >
+  <swiper class="swiper" :duration="200" :interval="2000" autoplay circular vertical @change="onChange">
     <swiper-item v-for="text in list" :key="text" class="swiper-item">
       {{ text }}
     </swiper-item>

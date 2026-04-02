@@ -3,7 +3,7 @@ export default {
   extends: [
     '@tofrankie/stylelint',
     '@tofrankie/stylelint/scss',
-    '@tofrankie/stylelint/vue',
+    '@tofrankie/stylelint/vue-scss',
     '@tofrankie/stylelint/uniapp',
   ],
 }
