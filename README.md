@@ -20,3 +20,8 @@ $ pnpm dev:app-plus
 > 编译到微信小程序的话，导入至微信开发工具，使用测试号打开。
 
 > 编译到 App 端的话，使用 HBuilderX 导入 `dist/dev/app`，接着 iOS 模拟器打开。
+
+## 状态 Fixed
+
+- issue: [#5354](https://github.com/dcloudio/uni-app/issues/5354)
+- commit: [b120b92](https://github.com/dcloudio/uni-app/commit/b120b921c92013cc2e1e9402b7d8a859b3858764)
